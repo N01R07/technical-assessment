@@ -21,11 +21,11 @@ From the repository root:
 
 Create a virtual environment:
 ```powershell
-python -m venv
+python -m venv <assign a (directory name)>
 ```
-Activate the and enter the virtual environment
+Activate and enter the virtual environment
 ```powershell
-.\VirtualEnvironment1\Scripts\activate
+.\<directory name>\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -61,21 +61,28 @@ pytest api
 ```
 
 ## Project Structure
-
-- `api/`
-  - `get_user_1_test.py`
-  - `get_users_test.py`
-  - `post_user_title_and_body_test.py`
-  - `put_user_title_and_body_test.py`
-  - `edge_cases/`
-    - edge case coverage for API endpoints
-- `saucedemo/`
-  - web validation tests for Sauce Demo flows
-- `pages/`
-  - page objects: `login_page.py`, `inventory_page.py`, `checkout_page.py`, `checkout_information.py`
-- `utils/`
-  - `screenshot.py`
-
+```
+technical-assessment-test/
+├── api/
+│   ├── get_user_1_test.py
+│   ├── get_users_test.py
+│   ├── post_user_title_and_body_test.py
+│   ├── put_user_title_and_body_test.py
+│   └── edge_cases/
+│       └── api_edge_cases_test.py
+├── saucedemo/
+│   └── checkout_flow_test.py
+├── pages/
+│   ├── login_page.py
+│   ├── inventory_page.py
+│   ├── checkout_page.py
+│   └── checkout_information.py
+├── utils/
+│   └── screenshot.py
+├── conftest.py
+├── pytest.ini
+└── requirements.txt
+```
 ## Notes
 
 - Ensure the virtual environment is activated before running tests.
