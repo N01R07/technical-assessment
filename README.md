@@ -69,14 +69,24 @@ technical-assessment-test/
 │   ├── post_user_title_and_body_test.py
 │   ├── put_user_title_and_body_test.py
 │   └── edge_cases/
-│       └── api_edge_cases_test.py
+│       └── edge_cases
+│           ├── edge_get_user_1_test.py
+│           ├── edge_get_users_test.py
+│           ├── edge_post_user_title_and_body_test.py
+│           └── edge_put_user_title_and_body_test.py
 ├── saucedemo/
-│   └── checkout_flow_test.py
+│   ├── saucedemo_checkout_test.py
+│   ├── saucedemo_checkout_v2_test.py
+│   ├── saucedemo_invalid_checkout_information_test.py
+│   └── saucedemo_no_items_test.py
 ├── pages/
 │   ├── login_page.py
 │   ├── inventory_page.py
 │   ├── checkout_page.py
 │   └── checkout_information.py
+├── docs
+│   ├── Documentation for technical assessment.xlsx
+│   └── Final Report.html
 ├── utils/
 │   └── screenshot.py
 ├── conftest.py
